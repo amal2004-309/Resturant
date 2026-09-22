@@ -244,7 +244,7 @@ header .navbar a:hover{
         display: block;
         border: .2rem solid rgba(0, 0, 0, .1);
         border-left: .5rem solid var(--red);
-       background: #fff; 
+        background: #fff; 
     }
 
 }
@@ -460,5 +460,36 @@ text-align: center;
     color: #fff;
     border-radius: .5rem;
     transition: 1s linear;
-   z-index: 1000;
+    z-index: 1000;
+}
+
+
+header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#scroll-top.active {
+    top: calc(100% - 12rem);
+}
+
+
+.custom-toast {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: var(--red);
+    color: #fff;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.custom-toast.show {
+    opacity: 1;
+    transform: translateY(0);
 }

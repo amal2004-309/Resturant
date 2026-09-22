@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restarant Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.come/ajax"> -->
 </head>
 <body>
@@ -12,15 +13,21 @@
 <!-- header section starts -->
 <header>
     <a href="#" class="logo"><i class="fas fa-utensils"></i>Food</a>
-    <div id="menue-bar" class="fas fa-bars" ></div>
+    <div id="menue-bar" class="fas fa-bars"></div>
     <nav class="navbar">
-          <a href="#home">Home</a>
-          <a href="#spciallity">Spciallity</a>
-          <a href="#popular">Popular</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#review">Review</a>
-          <a href="#order">Order</a>
+        <a href="#home">Home</a>
+        <a href="#spciallity">Spciallity</a>
+        <a href="#popular">Popular</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#order">Order</a>
     </nav>
+    <!-- أيقونة السلة مع العداد -->
+    <div class="icons">
+        <a href="#order" id="cart-btn" class="fas fa-shopping-cart">
+            <span id="cart-count">0</span>
+        </a>
+    </div>
 </header>
 
 
@@ -172,11 +179,7 @@
 <!--Start Section 3 -->
  <section class="steps">
   <!-- <h1 class="heading"><span>Our </span>Food Gallery </h1> -->
-  <div class="box">
-    <img src="./Pictures/2276931.png" alt="">
-    <h3>Choose Your Favourite Food</h3>
-  </div>
-
+  
   <div class="box">
     <img src="./Pictures/2276931.png" alt="">
     <h3>free And Fast Delivary</h3>
@@ -200,14 +203,14 @@
   <h1 class="heading"><span>Our </span>Food Gallery </h1>
   <div class="box-container">
     <div class="box">
-      <!-- <span class="price">$5 - $20</span> -->
+    
       <img src="./Pictures/9b3101ef-a26e-4f2b-ba66-fe30ea68bc4c.jpeg" alt="">
       <h3>Tasty Burger </h3>
       <a href="#" class="btn">Order now </a>
     </div>
 
     <div class="box">
-      <!-- <span class="price">$12 - $22</span> -->
+      
       <img src="./Pictures/◜ ˗ˏˋpinterest ; @moonlightmonthˎˊ˗ ◞.jpeg" alt="">
       <h3>Tasty Cake </h3>
       <a href="#" class="btn">Order now </a>
@@ -357,6 +360,9 @@
 <!-- scroll top button -->
 
 <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+
+<script src="main.js"></script>
 
 </body>
 </html>
